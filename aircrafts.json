@@ -1,0 +1,102 @@
+[
+    {
+        "AircraftId": 1,
+        "Type": "Type5",
+        "Registration": "PQKLQE"
+    },
+    {
+        "AircraftId": 2,
+        "Type": "Type3",
+        "Registration": "3H6DGG"
+    },
+    {
+        "AircraftId": 3,
+        "Type": "Type4",
+        "Registration": "99JEEO"
+    },
+    {
+        "AircraftId": 4,
+        "Type": "Type5",
+        "Registration": "R242BX"
+    },
+    {
+        "AircraftId": 5,
+        "Type": "Type1",
+        "Registration": "XAQFN4"
+    },
+    {
+        "AircraftId": 6,
+        "Type": "Type5",
+        "Registration": "2SPPK5"
+    },
+    {
+        "AircraftId": 7,
+        "Type": "Type3",
+        "Registration": "8Y5SQO"
+    },
+    {
+        "AircraftId": 8,
+        "Type": "Type3",
+        "Registration": "68ED5N"
+    },
+    {
+        "AircraftId": 9,
+        "Type": "Type5",
+        "Registration": "UZ1OWB"
+    },
+    {
+        "AircraftId": 10,
+        "Type": "Type2",
+        "Registration": "7B9175"
+    },
+    {
+        "AircraftId": 11,
+        "Type": "Type3",
+        "Registration": "UDLHX6"
+    },
+    {
+        "AircraftId": 12,
+        "Type": "Type1",
+        "Registration": "6MCPVL"
+    },
+    {
+        "AircraftId": 13,
+        "Type": "Type4",
+        "Registration": "ELCCAL"
+    },
+    {
+        "AircraftId": 14,
+        "Type": "Type4",
+        "Registration": "9QHL8R"
+    },
+    {
+        "AircraftId": 15,
+        "Type": "Type5",
+        "Registration": "0BCUDX"
+    },
+    {
+        "AircraftId": 16,
+        "Type": "Type4",
+        "Registration": "5T3IH8"
+    },
+    {
+        "AircraftId": 17,
+        "Type": "Type4",
+        "Registration": "AR7TQN"
+    },
+    {
+        "AircraftId": 18,
+        "Type": "Type4",
+        "Registration": "KEIKN6"
+    },
+    {
+        "AircraftId": 19,
+        "Type": "Type4",
+        "Registration": "88L3N1"
+    },
+    {
+        "AircraftId": 20,
+        "Type": "Type1",
+        "Registration": "W0LHL9"
+    }
+]
