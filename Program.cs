@@ -1,11 +1,10 @@
 ﻿using LittleAirline.Models;
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Data.Sqlite;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using Z.EntityFramework.Plus;
 
 using var context = new AppDbContext();
-
+var sw = new Stopwatch();
 
 
 
@@ -36,7 +35,6 @@ using var context = new AppDbContext();
 
 // Single delete
 // Her bliver de 2000 ændringer gemt hver gang.
-//var sw = new Stopwatch();
 //sw.Start();
 //int total = 0;
 //var flights = context.Flights.Where(x => x.FlightId > 0).ToList();
@@ -54,7 +52,6 @@ using var context = new AppDbContext();
 // Batch delete
 // Her bliver de 2000 ændringer gemt en enkelt gang til sidst.
 
-//var sw = new Stopwatch();
 //sw.Start();
 //int total = 0;
 //var flights = context.Flights.Where(x => x.FlightId > 0).ToList();
@@ -73,7 +70,6 @@ using var context = new AppDbContext();
 // Her loader vi ikke de 2000 objekter fra Db, men laver 2000 nye og
 // sætter et Remove parameter på.
 
-//var sw = new Stopwatch();
 //sw.Start();
 //int total = 0;
 //for (int i = 0; i <= 2000; i++)
@@ -91,9 +87,32 @@ using var context = new AppDbContext();
 
 // Rå SQL
 
-//var sw = new Stopwatch();
 //sw.Start();
 //var total = context.Database.ExecuteSqlRaw("DELETE FROM Flights WHERE FlightId > 0");
 //sw.Stop();
 //Console.WriteLine(total);
 //Console.WriteLine("Duration: " + sw.ElapsedMilliseconds);
+
+
+
+// Entity Framework Plus
+
+//sw.Start();
+//int total = 0;
+//var count = context.Flights.Where(f => f.FlightId > 0).Delete();
+//Console.WriteLine("Number of DELETE statements: " + count);
+//sw.Stop();
+//Console.WriteLine("Duration:" + sw.ElapsedMilliseconds);
+
+
+
+// ExecuteDelete
+
+//sw.Start();
+//int total = 0;
+//var count = context.Flights.Where(f => f.FlightId > 0).ExecuteDelete();
+//Console.WriteLine("Number of DELETE statements: " + count);
+//sw.Stop();
+//Console.WriteLine("Duration:" + sw.ElapsedMilliseconds);
+
+
